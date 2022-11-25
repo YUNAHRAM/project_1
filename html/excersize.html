@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      ossorigin="anonymous"
+    />
+    <style>
+      header {
+        background-color: blue;
+        font-size: 30px;
+        color: white;
+        color: white;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+      }
+      .menu > ol > li {
+        float: left;
+        list-style: none;
+      }
+      .menu > ol {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+      }
+      .post {
+        width: 100%;
+        border: 1px solid black;
+        margin: 1% 0;
+      }
+      .lesson {
+        width: 100%;
+        border: 1px solid black;
+        margin: 1% 0;
+      }
+
+      .copylight {
+        border: 1px solid black;
+        width: 100%;
+        font-size: 30px;
+        margin: 1% 0;
+        text-align: center;
+      }
+      header > i {
+        top: 2%;
+        left: 90%;
+        position: absolute;
+        margin-right: 2%;
+      }
+      .menu > ol > li > ol {
+        position: absolute;
+        list-style: none;
+        border: 0px solid black;
+        transition: all 0.4s;
+        overflow: hidden;
+        height: 0;
+        background-color: white;
+      }
+      .menu > ol > li:hover > ol {
+        height: 110px;
+        border: 1px solid black;
+        margin: 0 auto;
+        position: absolute;
+        text-align: center;
+      }
+      .menu > ol > li:hover > ol > li {
+      }
+
+      @media (min-width: 800px) {
+        .content {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        .post {
+          width: 50%;
+          border: 3px solid black;
+          margin: 0;
+        }
+        .lesson {
+          width: 50%;
+          border: 3px solid black;
+          margin: 0;
+        }
+        .menu {
+          width: 100%;
+          border: 1px solid black;
+          margin: 1% 0;
+          display: block;
+        }
+
+        header > i {
+          position: absolute;
+          left: 95%;
+          top: 120%;
+          display: none;
+        }
+        header {
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+    </div>
+    <div class="base">
+      <header>
+        <div>Learning HRML5</div>
+        <i class="fas fa-align-justify"></i>
+      </header>
+      <div class="menu">
+        <ol>
+          <li>
+            메뉴1
+            <ol>
+              <li>서브1</li>
+            </ol>
+          </li>
+
+          <li>
+            메뉴2
+            <ol>
+              <li>서브1</li>
+            </ol>
+          </li>
+          <li>
+            메뉴3
+            <ol>
+              <li>서브1</li>
+            </ol>
+          </li>
+          <li>
+            메뉴4
+            <ol>
+              <li>서브1</li>
+            </ol>
+          </li>
+          <li>
+            메뉴5
+            <ol>
+              <li>서브1</li>
+            </ol>
+          </li>
+          <li>
+            메뉴6
+            <ol>
+              <li>서브1</li>
+            </ol>
+          </li>
+          <li>
+            메뉴7
+            <ol>
+              <li>서브1</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div class="content">
+        <div class="post">
+          <h3>게시글 제목1</h3>
+          게시글 내용1~~<br />
+          <h3>게시글 내용2</h3>
+          게시글 내용1~~<br />
+          <h3>게시글 제목3</h3>
+          게시글 내용3~~<br />
+        </div>
+        <div class="lesson">
+          <h3>카테고리1</h3>
+          <h3>카테고리2</h3>
+          <h3>카테고리3</h3>
+        </div>
+      </div>
+      <div class="copylight">Copylight</div>
+    </div>
+  </body>
+</html>

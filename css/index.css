@@ -1,0 +1,345 @@
+/* 강원교육체 */
+@font-face {
+  font-family: "GangwonEduPowerExtraBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 나눔스퀘어체 */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+* {
+  background-color: #fffcf4;
+  margin: 0;
+  list-style: none;
+  font-family: "GangwonEduPowerExtraBoldA";
+  padding: 0;
+}
+/* body {
+  margin: 0;
+} */
+a {
+  font-family: NanumSquare;
+  background: none;
+  z-index: 100;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+/* .nav_container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+} */
+.nav_menu {
+  position: fixed;
+  margin-top: 0;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  /* justify-content: space-between;
+  align-items: center; */
+  grid-gap: 10px;
+  padding: 8px 12px;
+}
+
+.navbar__logo {
+  margin-left: 5vw;
+  margin-top: 3.4vh;
+  font-size: 26px;
+  font-weight: bolder;
+}
+#colored {
+  z-index: -1;
+  background: none;
+  position: absolute;
+  margin-left: -1.4vh;
+  margin-top: 1vh;
+  font-size: 26px;
+  font-weight: bolder;
+  color: #ccf17f;
+}
+/* .menu_div {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+} */
+.navbar__menu {
+  display: flex;
+  /* grid-template-columns: repeat(5, 1fr); */
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  padding-left: 0;
+}
+.navbar__menu li {
+  padding: 8px 12px;
+  margin: 3px;
+
+  width: 5rem;
+  height: 1.4rem;
+  text-align: center;
+  position: relative;
+  border: 1px solid black;
+  /* box-shadow: 0px 1px 5px 0px; */
+}
+.navbar__menu li:hover {
+  background-color: #ccf17f;
+}
+.navbar__menu a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* .menu_box {
+  position: absolute;
+  width: 600px;
+  height: 60px;
+  bottom: 20px;
+  top: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+} */
+/* .menu_box > div {
+  border: 1px solid black;
+} */
+
+.search {
+  position: relative;
+  margin-top: 3.5vh;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.search input {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 12vw;
+  height: 30px;
+  margin-top: -1vh;
+  padding-left: 22px;
+  position: absolute;
+  font-family: NanumSquare;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.search i {
+  position: absolute;
+  margin-left: 12vw;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 14px;
+  background: none;
+}
+.menu_right > .icons {
+  margin-right: 5vw;
+  margin-top: 3.5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.6vw;
+  font-size: 14px;
+}
+.menu_right > li i {
+  padding: 0;
+  margin: 0;
+}
+.kakaoimoti {
+  width: 14px;
+  height: 14px;
+  background: none;
+}
+/* .menu > div {
+  position: relative;
+  margin-left: 80px;
+  height: auto;
+  width: 82px;
+  border: 1px solid black;
+} */
+/* #menu_in {
+  border: 1px solid black;
+  margin-left: 83px;
+  position: absolute;
+  height: auto;
+  width: 80px;
+}
+li > .menu_btn > div {
+  border: 1px solid red;
+  margin-left: 80px;
+  left: 2px;
+  bottom: 2px;
+  position: absolute;
+  height: auto;
+  width: 78px;
+} */
+/* #manu_out {
+  position: relative;
+} */
+
+/*banner  */
+.main {
+  width: 100%;
+  height: 60vh;
+}
+.main_banner:nth-child(1) {
+  background: url("../img/bnnr-1.jpg") no-repeat;
+  width: 100%;
+  height: 60vh;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: border-box;
+  background-size: cover;
+  background-position: center top;
+}
+.banner__logo {
+  left: -6rem;
+  top: -6rem;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner {
+  color: #ccf17f;
+  font-size: 42px;
+  font-family: "GangwonEduPowerExtraBoldA";
+  align-items: center;
+  background: none;
+  top: 1.6rem;
+  left: 14rem;
+}
+.banner .daegu {
+  background: none;
+  font-size: 54px;
+}
+.banner p {
+  background: none;
+}
+.banner_circle {
+  border: 1px solid #ccf17f;
+  border-radius: 50%;
+  width: 38rem;
+  height: 12rem;
+  background: none;
+  display: inline-block;
+  margin: 0 auto;
+  position: absolute;
+  transform: rotate(4deg);
+}
+.banner_circle2 {
+  border: 1px solid #ccf17f;
+  border-radius: 50%;
+  width: 38rem;
+  height: 12rem;
+  background: none;
+  display: inline-block;
+  left: 0rem;
+  margin: 0 auto;
+  position: absolute;
+  transform: rotate(-4deg);
+}
+
+span {
+  font-size: 36px;
+}
+.sfont {
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "GangwonEduPowerExtraBoldA";
+  font-size: 30px;
+}
+.title1 {
+  letter-spacing: -0.1em;
+  white-space: nowrap;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+.cnt1_img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.title2 {
+  letter-spacing: -0.1em;
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cnt2_img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.overflow {
+  overflow: hidden;
+}
+.cnt2_line {
+  border: 1px solid black;
+  width: 100%;
+  height: 50vh;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.title3 {
+  letter-spacing: -0.1em;
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cnt3_img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.title4 {
+  letter-spacing: -0.1em;
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 6px;
+}
+.cnt4_img {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.sharp {
+  white-space: nowrap;
+  color: #ccf17f;
+  font-size: 44px;
+}
+
+@media screen and(min-width:768px) {
+  .nav_menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__menu.active {
+    display: none;
+  }
+  .search input {
+    display: none;
+  }
+  .sharp,
+  span,
+  h2 {
+    font-size: 20px;
+  }
+  .sfont {
+    font-size: 16px;
+  }
+}

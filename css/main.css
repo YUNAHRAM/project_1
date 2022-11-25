@@ -1,0 +1,18 @@
+/* 강원교육체 */
+@font-face {
+  font-family: "GangwonEduPowerExtraBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 나눔스퀘어체 */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+* {
+  background-color: #fffcf4;
+  margin: 0;
+  list-style: none;
+  font-family: "GangwonEduPowerExtraBoldA";
+  padding: 0;
+  text-decoration: none;
+}
